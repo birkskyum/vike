@@ -42,6 +42,8 @@ function commonConfig(): Plugin[] {
         const configVike = await getConfigVike(config)
         config.ssr.external ??= []
         config.ssr.external.push(...configVike.native)
+        config.optimizeDeps.exclude ??= []
+        config.optimizeDeps.exclude.push(...configVike.native)
       }
     }
   ]
