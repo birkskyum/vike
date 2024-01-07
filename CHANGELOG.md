@@ -1,3 +1,37 @@
+## [0.4.154](https://github.com/vikejs/vike/compare/v0.4.153...v0.4.154) (2024-01-06)
+
+
+### Bug Fixes
+
+* apply vite.ssrFixStackTrace() to warning stack trace (fix [#1355](https://github.com/vikejs/vike/issues/1355)) ([6415b1c](https://github.com/vikejs/vike/commit/6415b1c3031b360e8fb77c4b70c0fe30aeca1fc7))
+* improve slow crawling warning ([5865113](https://github.com/vikejs/vike/commit/58651134ec827307c6aa67ce227995733fd4ebcd))
+* increase hook timeouts upon pre-rendering ([61f05c0](https://github.com/vikejs/vike/commit/61f05c0e4ed42ba72b226e6f0f52a14f4b51ecab))
+* reliable workaround for Rollup bug ([3e842bb](https://github.com/vikejs/vike/commit/3e842bbe6ef4a19bb0a3a0eb980a333ea2cbbb15))
+* remove superfluous and misleading assertion ([fe12f96](https://github.com/vikejs/vike/commit/fe12f966f76fd9a27c63432abe484370fa969076))
+* remove superfluous importBuild await ([#1404](https://github.com/vikejs/vike/issues/1404)) ([7fdfa41](https://github.com/vikejs/vike/commit/7fdfa410772baf71322dd347616cfa077f32b9fe))
+* show hint upon CJS/ESM errors ([#1358](https://github.com/vikejs/vike/issues/1358), fixes [#621](https://github.com/vikejs/vike/issues/621)) ([2043733](https://github.com/vikejs/vike/commit/2043733a2892bcbea35154fdcd7426c1b5e033da))
+* tolerate + anywhere in file paths (fix [#1407](https://github.com/vikejs/vike/issues/1407)) ([159c659](https://github.com/vikejs/vike/commit/159c6595199547db558248d8a3ebc2ca02be356d))
+* update @brillout/vite-plugin-import-build ([5f01f30](https://github.com/vikejs/vike/commit/5f01f30259cc90e6b85bf327104718a153f74544))
+* update @brillout/vite-plugin-import-build (fix [#1404](https://github.com/vikejs/vike/issues/1404)) ([f84370a](https://github.com/vikejs/vike/commit/f84370a310272636c87be93bdcc28b8e9e4a6ac3))
+* workaround Rollup bug ([01ab602](https://github.com/vikejs/vike/commit/01ab6020e6a46f80b1b4e6e0ca3c1f498aac5251))
+
+
+
+## [0.4.153](https://github.com/vikejs/vike/compare/v0.4.152...v0.4.153) (2023-12-31)
+
+
+### Bug Fixes
+
+* improve handling of redundant errors ([c410699](https://github.com/vikejs/vike/commit/c410699680a70de59abec3d90fe36bc88d1acd99))
+* improve handling of virtual modules ([#479](https://github.com/vikejs/vike/issues/479)) ([3d25618](https://github.com/vikejs/vike/commit/3d2561887127a5ba8564ba1a98309c77a5325922))
+* improve render abort logging ([415899b](https://github.com/vikejs/vike/commit/415899bf77d58d474b99f1c2c5dda41ee705a1f0))
+* mitigate risk of infinite reloading page ([c21cea2](https://github.com/vikejs/vike/commit/c21cea215cea832930563a1380f2e40f1b61ceea))
+* properly handle errors thrown in onHydrationEnd() and onPageTransition{Start,End}() ([ad532e0](https://github.com/vikejs/vike/commit/ad532e08272392afa150e2a25549657c8a346e24))
+* properly handle errors thrown in onRenderClient ([6f928f9](https://github.com/vikejs/vike/commit/6f928f9ee6c1eeaf8279e9ee3b8180d987ba10c0))
+* use simplier dynamic import (fix [#1393](https://github.com/vikejs/vike/issues/1393)) ([06c1fd5](https://github.com/vikejs/vike/commit/06c1fd57376891766792ecc2a3ae248ff0b231df))
+
+
+
 ## [0.4.152](https://github.com/vikejs/vike/compare/v0.4.151...v0.4.152) (2023-12-26)
 
 

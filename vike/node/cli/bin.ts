@@ -4,7 +4,7 @@ import path, { resolve } from 'path'
 import { resolveConfig } from 'vite'
 import { getServerConfig } from '../plugin/plugins/serverEntryPlugin.js'
 import { logViteAny } from '../plugin/shared/loggerNotProd.js'
-import { prerenderForceExit, prerenderFromCLI } from '../prerender/runPrerender.js'
+import { runPrerender_forceExit, runPrerenderFromCLI } from '../prerender/runPrerender.js'
 import { assertUsage, projectInfo } from './utils.js'
 import { fileURLToPath } from 'url'
 
@@ -20,8 +20,8 @@ cli
     assertOptions()
     const { partial, noExtraDir, base, parallel, outDir, configFile } = options
     const root = options.root && resolve(options.root)
-    await prerenderFromCLI({ partial, noExtraDir, base, root, parallel, outDir, configFile })
-    prerenderForceExit()
+    await runPrerenderFromCLI({ partial, noExtraDir, base, root, parallel, outDir, configFile })
+    runPrerender_forceExit()
   })
 
 cli

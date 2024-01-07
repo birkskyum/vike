@@ -1,12 +1,12 @@
 {
   "name": "vike",
-  "version": "0.4.152",
+  "version": "0.4.154",
   "scripts": {
     "dev": "tsc --watch",
     "build": "rimraf dist/ && pnpm run build:esm && pnpm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "pnpm run build:cjs:ts && pnpm run build:cjs:fixup",
-    "build:cjs:ts": "tsc --outDir ./dist/cjs/ --module CommonJS --target ES2020 --moduleResolution Node10 --declaration false",
+    "build:cjs:ts": "tsc --project ./tsconfig.cjs.json",
     "build:cjs:fixup": "node ./dist-cjs-fixup.mjs",
     "release": "release-me patch",
     "release:commit": "release-me commit"
@@ -16,7 +16,7 @@
     "@brillout/json-serializer": "^0.5.8",
     "@brillout/picocolors": "^1.0.10",
     "@brillout/require-shim": "^0.1.2",
-    "@brillout/vite-plugin-import-build": "^0.3.1",
+    "@brillout/vite-plugin-import-build": "^0.3.4",
     "acorn": "^8.0.0",
     "cac": "^6.0.0",
     "es-module-lexer": "^1.0.0",
