@@ -1,6 +1,6 @@
 {
   "name": "vike",
-  "version": "0.4.155",
+  "version": "0.4.156",
   "scripts": {
     "dev": "tsc --watch",
     "build": "rimraf dist/ && pnpm run build:esm && pnpm run build:cjs",
@@ -16,7 +16,7 @@
     "@brillout/json-serializer": "^0.5.8",
     "@brillout/picocolors": "^1.0.10",
     "@brillout/require-shim": "^0.1.2",
-    "@brillout/vite-plugin-server-entry": "^0.4.1",
+    "@brillout/vite-plugin-server-entry": "^0.4.2",
     "acorn": "^8.0.0",
     "cac": "^6.0.0",
     "es-module-lexer": "^1.0.0",
