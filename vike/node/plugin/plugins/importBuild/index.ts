@@ -27,12 +27,14 @@ function importBuild(configVike2?: ConfigVikeUserProvided): Plugin[] {
         config = config_
         configVike = await getConfigVike(config)
       },
+      // writeBundle() + `enforce: 'pre'` in order to patch the server entry/index as soon as possible
+      enforce: 'pre',
       async writeBundle(options, bundle) {
         if (!viteIsSSR(config)) return
         await replace_ASSETS_MAP(options, bundle)
       }
     },
-    serverEntryPlugin({
+    ...serverEntryPlugin({
       inject: !!configVike2?.server,
       getImporterCode: () => {
         return getEntryCode(config, configVike)
